@@ -83,7 +83,7 @@ int main() {
             shrinked_perimeter = heatshrink_perimeter * ((float)shrink_factor / 100);
             
             if (object_perimeter < heatshrink_perimeter && object_perimeter > shrinked_perimeter) {
-                printf("Found correct value : %.2f mm (unshrinked delta : %.1f %, shrinked delta : %.1f %)\n",
+                printf("Found correct value : %.2f mm (unshrinked delta : %.1f %%, shrinked delta : %.1f %%)\n",
                        heatshrink_diameters[i],
                        100 - (object_perimeter/heatshrink_perimeter) * 100,
                        (shrinked_perimeter/object_perimeter) * 100);
